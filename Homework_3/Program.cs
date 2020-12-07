@@ -55,7 +55,7 @@ namespace Homework_3
             gameNumber = randNum.Next(12, 121);                                          // Генерируем число от 12 до 120
             Console.WriteLine($"Игра началась! Стартовое число: {gameNumber}\n");        // Вывод полученнного числа
             Sleep();
-            if (isTwelve == true) Console.WriteLine("Используйте числа: 1, 2, 3, 4, + (12)\n");
+            if (isTwelve == true) Console.WriteLine("Используйте числа: 1, 2, 3, 4, и (12)\n");
             else Console.WriteLine("Используйте числа: 1, 2, 3, 4\n");
             }     // Генерация случайного числа
 
@@ -179,7 +179,7 @@ namespace Homework_3
                     case 4:
                         userTry = 4;
                         break;
-                    case 12:
+                    case 12:                                         // Если используется число 12
                         if (isTwelve == true && gameNumber >= 12)
                         {
                             userTry = 12;
